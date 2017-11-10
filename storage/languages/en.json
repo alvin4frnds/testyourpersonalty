@@ -1,0 +1,144 @@
+{
+  "lang": {
+    "ques": "Select Language :",
+    "options": [],
+    "button": "\ud83d\udc4d Start"
+  },
+  "user": {
+    "ques": [
+      {
+        "text": "Enter your Full Name :",
+        "id": "name",
+        "type": "text"
+      },
+      {
+        "text": "Enter your Email ID :",
+        "id": "email",
+        "type": "email"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "text": "(1\/4) Which personalty you lean to ?",
+      "options": [
+        {
+          "text": "Types that like making decisions (J's)",
+          "value": "J"
+        },
+        {
+          "text": "Types that keep their options open (P's)",
+          "value": "P"
+        }
+      ]
+    },
+    {
+      "text": "(2\/4) Which personalty you lean to ?",
+      "options": [
+        {
+          "text": "Types that like details (S's)",
+          "value": "S"
+        },
+        {
+          "text": "Types that look at the forest instead of the trees (N's)",
+          "value": "N"
+        }
+      ]
+    },
+    {
+      "text": "(3\/4) Which personalty you lean to ?",
+      "options": [
+        {
+          "text": "Types that choose based on emotion (F's)",
+          "value": "F"
+        },
+        {
+          "text": "Types choose based on logic (T's)",
+          "value": "T"
+        }
+      ]
+    },
+    {
+      "text": "(4\/4) Which personalty you lean to ?",
+      "options": [
+        {
+          "text": "Types that talk a lot because they think out loud (E's)",
+          "value": "E"
+        },
+        {
+          "text": "types that talk less often because they think before they speak (I's)",
+          "value": "I"
+        }
+      ]
+    }
+  ],
+  "answers": {
+    "ISTJ": {
+      "text": "ISTJs are responsible organizers, driven to create and enforce order within systems and institutions. They are neat and orderly, inside and out, and tend to have a procedure for everything they do. Reliable and dutiful, ISTJs want to uphold tradition and follow regulations.",
+      "full": []
+    },
+    "ISFJ": {
+      "text": "ISFJs are conventional and grounded, and enjoy contributing to established structures of society. They are steady and committed workers with a deep sense of responsibility to others. They focus on fulflling their duties, particularly when they are taking care of the needs of other people. They want others to know that they are reliable and can be trusted to do what is expected of them. They are conscientious and methodical, and persist until the job is done.",
+      "full": []
+    },
+    "INFJ": {
+      "text": "INFJs have a unique ability to intuit others' emotions and motivations, and will often know how someone else is feeling before that person knows it himself. They trust their insights about others and have strong faith in their ability to read people. Although they are sensitive, they are also reserved; the INFJ is a private sort, and is selective about sharing intimate thoughts and feelings.",
+      "full": []
+    },
+    "INTJ": {
+      "text": "INTJs approach life by analyzing the theory behind what they see, and are typically focused inward, on their own thoughtful study of the world around them. INTJs are drawn to logical systems and are much less comfortable with the unpredictable nature of other people and their emotions. They are typically independent and selective about their relationships, preferring to associate with people who they fnd intellectually stimulating.",
+      "full": []
+    },
+    "ISTP": {
+      "text": "ISTPs are observant artisans with an understanding of mechanics and an interest in troubleshooting. They approach their environments with a flexible logic, looking for practical solutions to the problems at hand. They are independent and adaptable, and typically interact with the world around them in a self-directed, spontaneous manner. ISTPs are reserved, but not withdrawn: the ISTP enjoys taking action, and approaches the world with a keen appreciation for the physical and sensory experiences it has to ofer.",
+      "full": []
+    },
+    "ISFP": {
+      "text": "ISFPs are gentle caretakers who live in the present moment and enjoy their surroundings with cheerful, low-key enthusiasm. They are flexible and spontaneous, and like to go with the flow to enjoy what life has to offer. ISFPs are quiet and unassuming, and may be hard to get to know. However, to those who know them well, the ISFP is warm and friendly, eager to share in life's many experiences.",
+      "full": []
+    },
+    "INFP": {
+      "text": "INFPs are sensitive, caring, and compassionate, and and are deeply concerned with the personal growth of themselves and others. Individualistic and nonjudgmental, INFPs believe that each person must fnd their own path. They enjoy spending time exploring their own ideas and values, and are gently encouraging to others to do the same. INFPs are creative and often artistic; they enjoy fnding new outlets for self-expression.",
+      "full": []
+    },
+    "INTP": {
+      "text": "INTPs are philosophical innovators, fascinated by logical analysis, systems, and design. They are preoccupied with theory, and search for the universal law behind everything they see. They want to understand the unifying themes of life, in all their complexity.",
+      "full": []
+    },
+    "ESTP": {
+      "text": "Active and playful, ESTPs are often the life of the party and have a good sense of humor. They use their keen powers of observation to assess their audience and adapt textly to keep interactions exciting. Although they typically appear very social, they are rarely sensitive; the ESTP prefers to keep things fast-paced and silly rather than emotional or serious.",
+      "full": []
+    },
+    "ESFP": {
+      "text": "ESFPs are vivacious entertainers who charm and engage those around them. They are spontaneous, energetic, and fun-loving, and take pleasure in the things around them: food, clothes, nature, animals, and especially people. ESFPs are typically warm and talkative and have a contagious enthusiasm for life. They like to be in the middle of the action and the center of attention. They have a playful, open sense of humor, and like to draw out other people and help them have a good time.",
+      "full": []
+    },
+    "ENFP": {
+      "text": "ENFPs are people-centered creators with a focus on possibilities and a contagious enthusiasm for new ideas, people and activities .ENFPs are typically agile and expressive communicators, using their wit, humor, and mastery of language to create engaging stories. Imaginative and original, ENFPs often have a strong artistic side. They are drawn to art because of its ability to express inventive ideas and a create a deeper understanding of human experience.",
+      "full": []
+    },
+    "ENTP": {
+      "text": "ENTPs enjoy playing with ideas and especially like to banter with others. They use their text wit and command of language to keep the upper hand with other people, often cheerfully poking fun at their habits and eccentricities. While the ENTP enjoys challenging others, in the end they are usually happy to live and let live. They are rarely judgmental, but they may have little patience for people who can't keep up.",
+      "full": []
+    },
+    "ESTJ": {
+      "text": "ESTJs are the consummate organizers, and want to bring structure to their surroundings. They value predictability and prefer things to proceed in a logical order. When they see a lack of organization, the ESTJ often takes the initiative to establish processes and guidelines, so that everyone knows what's expected.",
+      "full": []
+    },
+    "ESFJ": {
+      "text": "ESFJs value loyalty and tradition, and usually make their family and friends their top priority. They are generous with their time, efort, and emotions. They often take on the concerns of others as if they were their own, and will attempt to put their signifcant organizational talents to use to bring order to other people's lives.",
+      "full": []
+    },
+    "ENFJ": {
+      "text": "ENFJs are typically energetic and driven, and often have a lot on their plates. They are tuned into the needs of others and acutely aware of human suffering; however, they also tend to be optimistic and forward-thinking, intuitively seeing opportunity for improvement. The ENFJ is ambitious, but their ambition is not self-serving: rather, they feel personally responsible for making the world a better place.",
+      "full": []
+    },
+    "ENTJ": {
+      "text": "ISTJs are responsible organizers, driven to create and enforce order within systems and institutions. They are neat and orderly, inside and out, and tend to have a procedure for everything they do. Reliable and dutiful, ISTJs want to uphold tradition and follow regulations.",
+      "full": []
+    }
+  },
+  "static": {
+    "questions-title": "There are sixteen personality types and each of us leans toward one of the types. Each personality type has four letters."
+  }
+}
