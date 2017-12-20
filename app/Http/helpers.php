@@ -16,7 +16,8 @@ if (!function_exists('asset')) {
      *
      * @return string
      */
-    function asset($path, $secured = false) {
+    function asset($path) {
+    	$secured = env("APP_SECURE", false);
         return urlGenerator()->asset($path, $secured);
     }
 }

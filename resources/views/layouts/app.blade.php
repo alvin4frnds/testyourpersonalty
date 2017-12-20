@@ -13,6 +13,16 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
+    @if(isset($record))
+        <meta property="og:title" content="What do you think about '{{ $record->name }}'" />
+    @else
+        <meta property="og:title" content="Know your personalty." />
+    @endif
+    <meta property="og:description" content="How well do you know {{ isset($record) ? $record->name : "your personalty" }}? Take this simple quiz and find out. Know yourself.">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ asset('og-image.png') }}"/>
+    <meta property="og:site_name" content="{{ env("APP_NAME") }}"/>
+
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/scrolling-nav.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/loading-spinner.css') }}">
@@ -20,6 +30,11 @@
     <style>
         body {
             height: 100%;
+        }
+
+        .col-md-12.col-lg-12.col-md-offset-1.col-lg-offset-1 {
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
     </style>
 </head>

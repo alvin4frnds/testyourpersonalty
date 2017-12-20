@@ -7,66 +7,78 @@
   "user": {
     "ques": [
       {
-        "text": "Enter your Full Name :",
+        "text": "Know about yourself and what your friends think about you. :",
+        "text2": "<name> wants to know what do you think about <name>. Ask for name. Start button",
         "id": "name",
+        "placeholder": "Enter full name",
         "type": "text"
       },
       {
         "text": "Enter your Email ID :",
+        "text2": "Enter your Email ID :",
         "id": "email",
+        "placeholder": "to come back and see result.",
         "type": "email"
       }
     ]
   },
   "questions": [
     {
-      "text": "(1\/4) Which personalty you lean to ?",
+      "counter": "Question 1 of 4",
+      "text": "In a difficult situation, do you",
+      "text2": "In a difficult situation, how does <name> decides",
       "options": [
         {
-          "text": "Types that like making decisions (J's)",
+          "text": "Decide immediately",
           "value": "J"
         },
         {
-          "text": "Types that keep their options open (P's)",
+          "text": "Need time to decide",
           "value": "P"
         }
       ]
     },
     {
-      "text": "(2\/4) Which personalty you lean to ?",
+      "counter": "Question 2 of 4",
+      "text": "To take decisions, do you need",
+      "text2": "To take decisions, does <name> need",
       "options": [
         {
-          "text": "Types that like details (S's)",
+          "text": "Details",
           "value": "S"
         },
         {
-          "text": "Types that look at the forest instead of the trees (N's)",
+          "text": "Overall picture",
           "value": "N"
         }
       ]
     },
     {
-      "text": "(3\/4) Which personalty you lean to ?",
+      "counter": "Question 3 of 4",
+      "text": "Your decisions are based on",
+      "text2": "<name>’s decisions are based on",
       "options": [
         {
-          "text": "Types that choose based on emotion (F's)",
+          "text": "Emotions",
           "value": "F"
         },
         {
-          "text": "Types choose based on logic (T's)",
+          "text": "Logic",
           "value": "T"
         }
       ]
     },
     {
-      "text": "(4\/4) Which personalty you lean to ?",
+      "counter": "Question 4 of 4",
+      "text": "How do you think in difficult situation?",
+      "text2": "How does <name> think in difficult situation? ",
       "options": [
         {
-          "text": "Types that talk a lot because they think out loud (E's)",
+          "text": "Think out loud and speak",
           "value": "E"
         },
         {
-          "text": "types that talk less often because they think before they speak (I's)",
+          "text": "Think first then speak",
           "value": "I"
         }
       ]
@@ -74,71 +86,77 @@
   ],
   "answers": {
     "ISTJ": {
-      "text": "ISTJs are responsible organizers, driven to create and enforce order within systems and institutions. They are neat and orderly, inside and out, and tend to have a procedure for everything they do. Reliable and dutiful, ISTJs want to uphold tradition and follow regulations.",
+      "text": "<name> is responsible organizers, driven to create and enforce order within systems and institutions. <name> is neat and orderly, inside and out, and tend to have a procedure for everything <name> do. Reliable and dutiful, <name> want to uphold tradition and follow regulations.",
       "full": []
     },
     "ISFJ": {
-      "text": "ISFJs are conventional and grounded, and enjoy contributing to established structures of society. They are steady and committed workers with a deep sense of responsibility to others. They focus on fulflling their duties, particularly when they are taking care of the needs of other people. They want others to know that they are reliable and can be trusted to do what is expected of them. They are conscientious and methodical, and persist until the job is done.",
+      "text": "<name> is conventional and grounded, and enjoy contributing to established structures of society. <name> is steady and committed workers with a deep sense of responsibility to others. <name> focus on fulflling their duties, particularly when taking care of the needs of other people. <name> want others to know that <name> is reliable and can be trusted to do what is expected. <name> is conscientious and methodical, and persist until the job is done.",
       "full": []
     },
     "INFJ": {
-      "text": "INFJs have a unique ability to intuit others' emotions and motivations, and will often know how someone else is feeling before that person knows it himself. They trust their insights about others and have strong faith in their ability to read people. Although they are sensitive, they are also reserved; the INFJ is a private sort, and is selective about sharing intimate thoughts and feelings.",
+      "text": "<name> has a unique ability to intuit others' emotions and motivations, and will often know how someone else is feeling before that person knows it himself. <name> trust insights about others and have strong faith in ability to read people. Although <name> is sensitive, <name> is also reserved; <name> is a private sort, and is selective about sharing intimate thoughts and feelings.",
       "full": []
     },
     "INTJ": {
-      "text": "INTJs approach life by analyzing the theory behind what they see, and are typically focused inward, on their own thoughtful study of the world around them. INTJs are drawn to logical systems and are much less comfortable with the unpredictable nature of other people and their emotions. They are typically independent and selective about their relationships, preferring to associate with people who they fnd intellectually stimulating.",
+      "text": "<name> approach life by analyzing the theory behind what they see, and are typically focused inward, on own thoughtful study of the world around them. <name> is drawn to logical systems and is much less comfortable with the unpredictable nature of other people and their emotions. <name> is typically independent and selective about relationships, preferring to associate with people who <name> finds intellectually stimulating.",
       "full": []
     },
     "ISTP": {
-      "text": "ISTPs are observant artisans with an understanding of mechanics and an interest in troubleshooting. They approach their environments with a flexible logic, looking for practical solutions to the problems at hand. They are independent and adaptable, and typically interact with the world around them in a self-directed, spontaneous manner. ISTPs are reserved, but not withdrawn: the ISTP enjoys taking action, and approaches the world with a keen appreciation for the physical and sensory experiences it has to ofer.",
+      "text": "<name> is observant artisans with an understanding of mechanics and an interest in troubleshooting. <name> approach environments with a flexible logic, looking for practical solutions to the problems at hand. <name> is independent and adaptable, and typically interact with the world around them in a self-directed, spontaneous manner. <name> is reserved, but not withdrawn: enjoys taking action, and approaches the world with a keen appreciation for the physical and sensory experiences it has to ofer.",
       "full": []
     },
     "ISFP": {
-      "text": "ISFPs are gentle caretakers who live in the present moment and enjoy their surroundings with cheerful, low-key enthusiasm. They are flexible and spontaneous, and like to go with the flow to enjoy what life has to offer. ISFPs are quiet and unassuming, and may be hard to get to know. However, to those who know them well, the ISFP is warm and friendly, eager to share in life's many experiences.",
+      "text": "<name> is gentle caretakers who live in the present moment and enjoy their surroundings with cheerful, low-key enthusiasm. <name> is flexible and spontaneous, and like to go with the flow to enjoy what life has to offer. <name> is quiet and unassuming, and may be hard to get to know. However, to those who know them well, <name> is warm and friendly, eager to share in life's many experiences.",
       "full": []
     },
     "INFP": {
-      "text": "INFPs are sensitive, caring, and compassionate, and and are deeply concerned with the personal growth of themselves and others. Individualistic and nonjudgmental, INFPs believe that each person must fnd their own path. They enjoy spending time exploring their own ideas and values, and are gently encouraging to others to do the same. INFPs are creative and often artistic; they enjoy fnding new outlets for self-expression.",
+      "text": "<name> is sensitive, caring, and compassionate, and and is deeply concerned with the personal growth of themselves and others. Individualistic and nonjudgmental, <name> believe that each person must find their own path. <name> enjoy's spending time exploring <name>'s own ideas and values, and is gently encouraging to others to do the same. <name> is creative and often artistic; <name> enjoy finding new outlets for self-expression.",
       "full": []
     },
     "INTP": {
-      "text": "INTPs are philosophical innovators, fascinated by logical analysis, systems, and design. They are preoccupied with theory, and search for the universal law behind everything they see. They want to understand the unifying themes of life, in all their complexity.",
+      "text": "<name> is philosophical innovators, fascinated by logical analysis, systems, and design. <name> is preoccupied with theory, and search for the universal law behind everything they see. <name> want to understand the unifying themes of life, in all complexity.",
       "full": []
     },
     "ESTP": {
-      "text": "Active and playful, ESTPs are often the life of the party and have a good sense of humor. They use their keen powers of observation to assess their audience and adapt textly to keep interactions exciting. Although they typically appear very social, they are rarely sensitive; the ESTP prefers to keep things fast-paced and silly rather than emotional or serious.",
+      "text": "Active and playful, <name> is often the life of the party and have a good sense of humor. <name> use keen powers of observation to assess audience and adapt textly to keep interactions exciting. Although <name> typically appear very social, they is rarely sensitive; <name> prefers to keep things fast-paced and silly rather than emotional or serious.",
       "full": []
     },
     "ESFP": {
-      "text": "ESFPs are vivacious entertainers who charm and engage those around them. They are spontaneous, energetic, and fun-loving, and take pleasure in the things around them: food, clothes, nature, animals, and especially people. ESFPs are typically warm and talkative and have a contagious enthusiasm for life. They like to be in the middle of the action and the center of attention. They have a playful, open sense of humor, and like to draw out other people and help them have a good time.",
+      "text": "<name> is vivacious entertainers who charm and engage those around them. <name> is spontaneous, energetic, and fun-loving, and take pleasure in the things around them: food, clothes, nature, animals, and especially people. <name> is typically warm and talkative and have a contagious enthusiasm for life. <name> like to be in the middle of the action and the center of attention. <name> have a playful, open sense of humor, and like to draw out other people and help them have a good time.",
       "full": []
     },
     "ENFP": {
-      "text": "ENFPs are people-centered creators with a focus on possibilities and a contagious enthusiasm for new ideas, people and activities .ENFPs are typically agile and expressive communicators, using their wit, humor, and mastery of language to create engaging stories. Imaginative and original, ENFPs often have a strong artistic side. They are drawn to art because of its ability to express inventive ideas and a create a deeper understanding of human experience.",
+      "text": "<name> is people-centered creators with a focus on possibilities and a contagious enthusiasm for new ideas, people and activities .<name> is typically agile and expressive communicators, using wit, humor, and mastery of language to create engaging stories. Imaginative and original, <name> often have a strong artistic side. <name> is drawn to art because of its ability to express inventive ideas and a create a deeper understanding of human experience.",
       "full": []
     },
     "ENTP": {
-      "text": "ENTPs enjoy playing with ideas and especially like to banter with others. They use their text wit and command of language to keep the upper hand with other people, often cheerfully poking fun at their habits and eccentricities. While the ENTP enjoys challenging others, in the end they are usually happy to live and let live. They are rarely judgmental, but they may have little patience for people who can't keep up.",
+      "text": "<name> enjoy playing with ideas and especially like to banter with others. <name> use text wit and command of language to keep the upper hand with other people, often cheerfully poking fun at their habits and eccentricities. While <name> enjoys challenging others, in the end they is usually happy to live and let live. <name> is rarely judgmental, but may have little patience for people who can't keep up.",
       "full": []
     },
     "ESTJ": {
-      "text": "ESTJs are the consummate organizers, and want to bring structure to their surroundings. They value predictability and prefer things to proceed in a logical order. When they see a lack of organization, the ESTJ often takes the initiative to establish processes and guidelines, so that everyone knows what's expected.",
+      "text": "<name> is the consummate organizers, and want to bring structure to surroundings. <name> value predictability and prefer things to proceed in a logical order. When <name> see a lack of organization, <name> often takes the initiative to establish processes and guidelines, so that everyone knows what's expected.",
       "full": []
     },
     "ESFJ": {
-      "text": "ESFJs value loyalty and tradition, and usually make their family and friends their top priority. They are generous with their time, efort, and emotions. They often take on the concerns of others as if they were their own, and will attempt to put their signifcant organizational talents to use to bring order to other people's lives.",
+      "text": "<name> value loyalty and tradition, and usually make family and friends top priority. <name> is generous with time, efort, and emotions. <name> often take on the concerns of others as if it were their own, and will attempt to put <name>'s signifcant organizational talents to use to bring order to other people's lives.",
       "full": []
     },
     "ENFJ": {
-      "text": "ENFJs are typically energetic and driven, and often have a lot on their plates. They are tuned into the needs of others and acutely aware of human suffering; however, they also tend to be optimistic and forward-thinking, intuitively seeing opportunity for improvement. The ENFJ is ambitious, but their ambition is not self-serving: rather, they feel personally responsible for making the world a better place.",
+      "text": "<name> is typically energetic and driven, and often have a lot on plates. <name> is tuned into the needs of others and acutely aware of human suffering; however, <name> also tend to be optimistic and forward-thinking, intuitively seeing opportunity for improvement. The <name> is ambitious, but ambition is not self-serving: rather, <name> feel personally responsible for making the world a better place.",
       "full": []
     },
     "ENTJ": {
-      "text": "ISTJs are responsible organizers, driven to create and enforce order within systems and institutions. They are neat and orderly, inside and out, and tend to have a procedure for everything they do. Reliable and dutiful, ISTJs want to uphold tradition and follow regulations.",
+      "text": "<name> is responsible organizers, driven to create and enforce order within systems and institutions. <name> is neat and orderly, inside and out, and tend to have a procedure for everything they do. Reliable and dutiful, <name> want to uphold tradition and follow regulations.",
       "full": []
     }
   },
   "static": {
+    "share-link": "Share this link with your friends",
+    "click-here": "Click here to start",
+    "friends-result-for-friend": "How his other friends see him?",
+    "friends-result-for-me": "How your friends see you?",
+    "start-my-own": "Start your own Quiz and know what your friends think about you.",
+    "result": "Open  this link again from your whatsapp/facebook to see What your friends think about you.",
     "questions-title": "There are sixteen personality types and each of us leans toward one of the types. Each personality type has four letters."
   }
 }

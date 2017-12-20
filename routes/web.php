@@ -23,10 +23,19 @@ $app->get('/{lang:[a-z]+}', function($lang) {
     return view('quiz', ['data' => (new Repo($lang))->all(), 'lang' => $lang]);
 });
 
-$app->get('/{id:[0-9]}', function($id) {
-    $record = (new Record)->findOrFail($id);
-    
-    return view('quiz', ['data' => (new Repo($record->lang))->all($record), 'record' => $record->toArray()]);
+$app->get('/{id:[0-9]+}', function($id, Request $request) {
+	$record = (new Record)->findOrFail($id);
+	$others = (new Record())->where('for', $id)->get(['name', 'result', 'created_at'])->toArray();
+	
+	if ($request->cookie('myid') == $id) {
+		return view('quiz', ['data' => (new Repo($record->lang))->all(), 'lang' => null, 'others' => $others]);
+	}
+	
+    return view('quiz', [
+    	'data' => (new Repo($record->lang))->all($record),
+	    'record' => $record->toArray(),
+	    'others' => $others
+    ]);
 });
 
 $app->post('/', function(Request $request) {
@@ -54,6 +63,7 @@ $app->post('/', function(Request $request) {
     return array_merge($record->toArray(), [
         'result' => $result,
         'url' => url($record->id),
+	    'id'  => $record->id,
     ]);
 });
 

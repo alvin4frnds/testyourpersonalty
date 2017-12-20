@@ -47,6 +47,7 @@
                                    class="form-control"
                                    id="{{ $question['id'] }}"
                                    ng-model="answers.{{ $question['id'] }}"
+                                   placeholder="{{ $question["placeholder"] }}"
                                    required
                             >
                         </div>
@@ -62,7 +63,8 @@
                     <h3>{{ $data['static']['questions-title'] }}</h3>
                     <br>
 
-                    <label>{{ $question['text'] }}</label>
+                    <h6>{{ $question['counter'] }}</h6>
+                    <h5>{{ $question['text'] }}</h5>
                     @foreach($question['options'] as $option)
                         <button class="btn btn-block btn-primary"
                                 id="option-{{ $option['value'] }}"
@@ -91,29 +93,43 @@
                         Try Again
                     </a>
                 </div>
-                <div class="col-md-12 col-lg-12 col-md-offset-1 col-lg-offset-1" ng-show="linkGenerated">
-                    <h2>Share this link with your friends...</h2>
-                    <div class="form-group">
-                        <input type="text"
-                               class="form-control"
-                               id="sharelink"
-                               readonly>
+                @if(isset($record))
+                    <div class="col-md-12 col-lg-12 col-md-offset-1 col-lg-offset-1" ng-show="linkGenerated">
+                        <h2>{{ $data['static']['start-my-own'] }}</h2>
+                        <a href="{{ url('/') }}">
+                            <button class="btn btn-block btn-primary">
+                                {{ $data['static']['click-here'] }}
+                            </button>
+                        </a>
                     </div>
+                @else
+                    {{-- if user is trying for him/her self. --}}
+                    <div class="col-md-12 col-lg-12 col-md-offset-1 col-lg-offset-1" ng-show="linkGenerated">
+                        <h2>...</h2>
+                        <div class="form-group">
+                            <input type="text"
+                                   class="form-control"
+                                   id="sharelink"
+                                   readonly>
+                        </div>
 
-                    <div class="fb-share-button" data-href="http://personality.dev/4" data-layout="button"
-                         style="margin: 5px;"
-                         data-size="large" data-mobile-iframe="true">
-                        <a class="fb-xfbml-parse-ignore" target="_blank" id="facebooksharelink"
-                           href="#">Share</a>
+                        <div class="fb-share-button" data-href="http://personality.dev/0" data-layout="button"
+                             style="margin: 5px;"
+                             data-size="large" data-mobile-iframe="true">
+                            <a class="fb-xfbml-parse-ignore" target="_blank" id="facebooksharelink"
+                               href="#">Share</a>
+                        </div>
+
+                        <a href="#" id="whatsappsharelink">
+                            <img src="{{ asset('images/whatsapp.png') }}" alt="" width="80px">
+                        </a>
+
+                        <h2>{{ $data['static']['result'] }}</h2>
                     </div>
+                @endif
 
-                    <a href="#" id="whatsappsharelink">
-                        <img src="{{ asset('images/whatsapp.png') }}" alt="" width="80px">
-                    </a>
-                </div>
 
-                <div class="col-md-12 col-lg-12 col-md-offset-1 col-lg-offset-1" ng-show="linkGenerated">
-                    <h2>Results</h2>
+                <div class="col-md-12 col-lg-12 col-md-offset-1 col-lg-offset-1">
 
                     @if(isset($record))
                         <p>
@@ -126,11 +142,27 @@
                             <b>What do you think of {{ $record['name'] }}</b>
                         </p>
                         <p><span id="personalty"></span></p>
+
                     @else
                         <p>
                             <b>What is your personality.</b>
                         </p>
                         <p><span id="personalty"></span></p>
+
+                    @endif
+
+                    @if(isset($others))
+                        @if(isset($record))
+                            <h3>{{ $data['static']['friends-result-for-friend'] }}</h3>
+                            @foreach($others as $other)
+                                <p>{{ $data['answers'][$other['result']]['text'] }}</p>
+                            @endforeach
+                        @else
+                            <h3>{{ $data['static']['friends-result-for-me'] }}</h3>
+                            @foreach($others as $other)
+                                <p>{{ $data['answers'][$other['result']]['text'] }}</p>
+                            @endforeach
+                        @endif
                     @endif
                 </div>
             </div>
@@ -140,10 +172,11 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script>
         var data = {!! json_encode($data) !!};
         var record = {!! (isset($record) ? json_encode($record) : "false") !!};
-        var stage = {{ (isset($lang) && $lang) ? 1 : 0 }};
+        var stage = {{ ((isset($lang) && $lang) || (isset($record) && $record)) ? 1 : 0 }};
     </script>
 
     <script>
@@ -162,6 +195,12 @@
             @if(isset($lang) && $lang)
                 $scope.answers.lang = "{{ $lang }}";
             @endif
+
+            if (Cookies.get('myid') === window.location.href.split("/")[3]) {
+                $scope.stage = 2 + data.questions.length
+                $scope.loading = false;
+                // $scope.$apply()
+            }
 
             if (record) {
                 $scope.answers.for = record.id
@@ -203,6 +242,11 @@
 
                 if (stage === (2 + data.questions.length)) {
                     $http.post('{{ url() }}', $scope.answers).then(function (response) {
+
+                        if (! $scope.answers.for) {
+                            Cookies.set("myid", response.data.id, { expires: 300 });
+                        }
+
                         $scope.loading = false;
                         $scope.linkGenerated = true;
 

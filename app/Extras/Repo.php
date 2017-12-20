@@ -25,18 +25,23 @@ class Repo {
         foreach ($arr as $key => $value) {
             $this->$key = $value;
         }
-        
-        
     }
     
     public function all($record = null) {
+    	$replacement = is_null($record) ? "You" : explode(" ", $record->name)[0];
+    	foreach ($this->answers as $key => $answer) {
+    		$this->answers[$key]['text'] = str_replace('<name>', $replacement, $answer['text']);
+	    }
+    	
         if (is_null($record))
             return get_object_vars($this);
         
-        $firstName = explode(" ", $record->name)[0];
+        foreach ($this->user['ques'] as $key => $question) {
+        	$this->user['ques'][$key]['text'] = str_replace("<name>", $firstName, $question['text2']);
+	    }
         
         foreach ($this->questions as $key => $question) {
-            $this->questions[$key]['text'] = str_replace("you", $firstName, $question['text']);
+	        $this->questions[$key]['text'] = str_replace("<name>", $firstName, $question['text2']);
             $keyname = "question".($key + 1);
             $this->questions[$key]['answ'] = $record->$keyname;
         }

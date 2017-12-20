@@ -7,66 +7,78 @@
   "user": {
     "ques": [
       {
-        "text": "अपना पूरा नाम लिखे :",
+        "text": "अपने बारे में और अपने दोस्तों के बारे में जानें जो आपके बारे में सोचते हैं :",
+        "text2": "आप <name> को कितना जानते है. नाम लिख़े",
         "id": "name",
+        "placeholder": "अपना पूरा नाम लिखे (name)",
         "type": "text"
       },
       {
         "text": "अपना ईमेल आईडी दर्ज करें :",
+        "text2": "अपना ईमेल आईडी दर्ज करें :",
         "id": "email",
+        "placeholder": "ताकि आप वापस आकर परिणाम देख सकें। (E-Mail)",
         "type": "email"
       }
     ]
   },
   "questions": [
     {
-      "text": "(1\/4) आप किस व्यक्तित्व को झुकते हैं ?",
+      "counter": "4 का प्रश्न 1",
+      "text": "मुस्खिल समय में क्या आँप ?",
+      "text2": "मुश्किल समय में <name> कैसे निर्णय लेता है?",
       "options": [
         {
-          "text": "Types that like making decisions (J's)",
+          "text": "तुरंत निर्णय लेते हिं ",
           "value": "J"
         },
         {
-          "text": "Types that keep their options open (P's)",
+          "text": "बाद में समय लेकर निर्णय लेना पसंद करते हिं ",
           "value": "P"
         }
       ]
     },
     {
-      "text": "(2\/4) आप किस व्यक्तित्व को झुकते हैं ?",
+      "counter": "4 का प्रश्न 2",
+      "text": "निर्णय लेने के लिए आपको क्या चाहिए ?",
+      "text2": "निर्णय लेने के लिए <name> को क्या चाहिए ?",
       "options": [
         {
-          "text": "प्रकार की तरह विवरण (S's)",
+          "text": "बारीक और विसरत विवरण",
           "value": "S"
         },
         {
-          "text": "पेड़ों के बजाय जंगल को देखने वाले प्रकार (N's)",
+          "text": "ऊपर से मोटों मोटी बातें",
           "value": "N"
         }
       ]
     },
     {
-      "text": "(3\/4) आप किस व्यक्तित्व को झुकते हैं ?",
+      "counter": "4 का प्रश्न 3",
+      "text": "आपका निर्णय किस पर ज़्यादा आधारित होता है ?",
+      "text2": "<name> की निर्णय किस पर ज़्यादा आधारित होता है ?",
       "options": [
         {
-          "text": "भावनाओं के आधार पर चुनने वाले प्रकार (F's)",
+          "text": "भावनाओं पर",
           "value": "F"
         },
         {
-          "text": "प्रकार तर्क के आधार पर चुनते हैं (T's)",
+          "text": "तर्कों पर",
           "value": "T"
         }
       ]
     },
     {
-      "text": "(4\/4) आप किस व्यक्तित्व को झुकते हैं ?",
+      "counter": "4 का प्रश्न 4",
+      "text": "आप कैसे निर्णय लेते है ?",
+      "text2": "<name> कैसे निर्णय लेता है ?",
       "options": [
         {
-          "text": "उन चीजों के बारे में बहुत कुछ बोलते हैं, क्योंकि वे ज़ोर से सोचते हैं (E's)",
+          "text": "साथ साथ बोलते है ओर निर्णय भी लेते है",
           "value": "E"
         },
         {
-          "text": "ऐसे प्रकार जो अक्सर कम बोलते हैं क्योंकि वे बोलने से पहले सोचते हैं (I's)",
+          "text": "पहले सोचते है फिर सोच कर बोलते है",
           "value": "I"
         }
       ]
@@ -74,19 +86,19 @@
   ],
   "answers": {
     "ISTJ": {
-      "text": "ISTJs जिम्मेदार आयोजकों हैं, जो सिस्टम और संस्थानों के भीतर आदेश बनाने और लागू करने के लिए प्रेरित होते हैं। वे साफ और सुव्यवस्थित हैं, अंदर और बाहर, और जो भी वे करते हैं, उनके लिए एक प्रक्रिया होती है। विश्वसनीय और कर्तव्यशाली, ISTJ परंपरा को कायम रखने और नियमों का पालन करना चाहते हैं।",
+      "text": "<name> सिस्टम और संस्थानों के भीतर आदेश बनाने और लागू करने के लिए संचालित जिम्मेदार आयोजक है। <name> साफ और व्यवस्थित है, अंदर और बाहर, और सब कुछ <name> के लिए एक प्रक्रिया है विश्वसनीय और कर्तव्य, <name> परंपरा को बनाए रखने और नियमों का पालन करना चाहते हैं",
       "full": []
     },
     "ISFJ": {
-      "text": "ISFJs पारंपरिक और आधारभूत हैं, और समाज की स्थापना की संरचनाओं में योगदान करने का आनंद लेते हैं। वे स्थिर और प्रतिबद्ध श्रमिक हैं जो दूसरों के प्रति ज़िम्मेदारी का गहरा अर्थ है। वे अपने कर्तव्यों को पूरा करने पर ध्यान केंद्रित करते हैं, खासकर जब वे अन्य लोगों की ज़रूरतों का ख्याल रखते हैं। वे दूसरों को यह जानना चाहते हैं कि वे भरोसेमंद हैं और उनके द्वारा अपेक्षित कार्य करने पर भरोसा किया जा सकता है। वे ईमानदार और व्यवस्थित हैं, और जब तक काम नहीं किया जाता है तब तक जारी रहती हैं।",
+      "text": "<name> परंपरागत और आधारभूत है, और समाज के स्थापित ढांचे में योगदान करना पसंद करते है। <name> स्थिर और प्रतिबद्ध श्रमिकों को दूसरों के प्रति गहन समझ के साथ। <name> अपने कर्तव्यों को पूरा करने पर ध्यान देंते है, खासकर जब अन्य लोगों की जरूरतों का ख्याल रखने की बात आती है । <name> दूसरों को यह जानना चाहते हैं कि विश्वसनीय है और जो उम्मीद की जाती है उनपे भरोसा किया जा सकता है <name> ईमानदार और व्यवस्थित है, और तब तक दृढ़ रहते है जब तक काम पूरा नहीं हो जाता।",
       "full": []
     },
     "INFJ": {
-      "text": "INFJs के पास दूसरों की भावनाओं और प्रेरणाओं की अनूठी क्षमता है, और यह अक्सर पता चलेगा कि इससे पहले कि कोई और महसूस करता है, उस व्यक्ति को खुद को जानता है वे दूसरों के बारे में अपनी अंतर्दृष्टि पर भरोसा करते हैं और लोगों को पढ़ने की उनकी क्षमता में दृढ़ विश्वास रखते हैं। हालांकि वे संवेदनशील हैं, वे भी आरक्षित हैं; आईएनएफजे एक निजी प्रकार है, और अंतरंग विचारों और भावनाओं को साझा करने के बारे में चयनात्मक है।",
+      "text": "<name> में दूसरों की भावनाओं और प्रेरणाओं को अनूठा करने की एक अनोखी क्षमता होती है, और यह अक्सर पता होता है कि कोई और व्यक्ति कैसा महसूस कर रहा है जब वो व्यक्ति खुद नहीं जानता है <name> दूसरों के बारे में अंतर्दृष्टि पर भरोसा करें और लोगों को पढ़ने की क्षमता में दृढ़ विश्वास है हालांकि <name> संवेदनशील है, <name> भी आरक्षित है; <name> का निजी प्रकार है, और अंतरंग विचारों और भावनाओं को साझा करने के बारे में चयनात्मक है।",
       "full": []
     },
     "INTJ": {
-      "text": "INTJs उनके दृष्टिकोण के पीछे के सिद्धांत का विश्लेषण करके जीवन को दृष्टिकोण करते हैं, और आम तौर पर उनके आसपास की दुनिया के अपने विचारशील अध्ययन पर केंद्रित होते हैं। INTJs तार्किक प्रणालियों के लिए तैयार हैं और अन्य लोगों की अप्रत्याशित प्रकृति और उनकी भावनाओं के साथ बहुत कम सहज हैं। वे आम तौर पर स्वतंत्र और उनके रिश्ते के बारे में चयनात्मक होते हैं, जो उन लोगों के साथ सहयोग करने को प्राथमिकता देते हैं जो वे बौद्धिक रूप से उत्तेजक होते हैं।",
+      "text": "<name> उनके आस-पास के सिद्धांत के विश्लेषण के द्वारा जीवन का दृष्टिकोण करते हैं, और आम तौर पर उनके अंदर की दुनिया के विचारशील अध्ययन पर केंद्रित होते हैं। <name> तार्किक प्रणालियों के लिए तैयार है और अन्य लोगों और उनकी भावनाओं की अप्रत्याशित प्रकृति के साथ बहुत कम सहज है। <name> आमतौर पर स्वतंत्र और रिश्तों के बारे में चयनात्मक है, जो लोगों के साथ सहयोग करना पसंद करते हैं, जो <name> बौद्धिक रूप से उत्तेजक पाते हैं",
       "full": []
     },
     "ISTP": {
@@ -98,47 +110,53 @@
       "full": []
     },
     "INFP": {
-      "text": "INFPs are sensitive, caring, and compassionate, and and are deeply concerned with the personal growth of themselves and others. Individualistic and nonjudgmental, INFPs believe that each person must fnd their own path. They enjoy spending time exploring their own ideas and values, and are gently encouraging to others to do the same. INFPs are creative and often artistic; they enjoy fnding new outlets for self-expression.",
+      "text": "INFPs, संवेदनशील देखभाल, और दयालु हैं, और और गहराई से खुद को और दूसरों के व्यक्तिगत विकास को लेकर चिंतित हैं। व्यक्तिगत और गैर-सरकारी कार्यक्रमों में, आईएनएफपी का मानना है कि प्रत्येक व्यक्ति को अपना मार्ग चाहिए। वे अपने विचारों और मूल्यों की खोज करने में समय व्यतीत करते हैं, और धीरे-धीरे दूसरों को भी ऐसा करने के लिए प्रोत्साहित करते हैं। INFP रचनात्मक और अक्सर कलात्मक होते हैं; वे स्वयं अभिव्यक्ति के लिए नए आउटलेट्स का आनंद लेते हैं।",
       "full": []
     },
     "INTP": {
-      "text": "INTPs are philosophical innovators, fascinated by logical analysis, systems, and design. They are preoccupied with theory, and search for the universal law behind everything they see. They want to understand the unifying themes of life, in all their complexity.",
+      "text": "INTPs दार्शनिक नवप्रवर्तनकर्ता हैं, तार्किक विश्लेषण, प्रणालियों, और डिजाइन से प्रभावित हैं। वे सिद्धांत के साथ व्यस्त हैं, और जो भी वे देखते हैं वे सब के पीछे सार्वभौमिक कानून की खोज करते हैं। वे अपने सभी जटिलताओं में जीवन के एकीकरण वाले विषयों को समझना चाहते हैं।",
       "full": []
     },
     "ESTP": {
-      "text": "Active and playful, ESTPs are often the life of the party and have a good sense of humor. They use their keen powers of observation to assess their audience and adapt textly to keep interactions exciting. Although they typically appear very social, they are rarely sensitive; the ESTP prefers to keep things fast-paced and silly rather than emotional or serious.",
+      "text": "सक्रिय और चंचल, ESTPs अक्सर पार्टी का जीवन हैं और हास्य की अच्छी समझ है। वे अपने दर्शकों का आकलन करने और बातचीत को रोमांचक बनाने के लिए पाठ की अनुकूलन करने के लिए अवलोकन करने की अपनी गहरी शक्तियों का उपयोग करते हैं। हालांकि वे आमतौर पर बहुत ही सामाजिक दिखाई देते हैं, वे शायद ही कभी संवेदनशील होते हैं; ESTP चीजें तेजी से रफ़्तार और मूर्खतापूर्ण बजाय भावनात्मक या गंभीर रखने के लिए पसंद करते हैं।",
       "full": []
     },
     "ESFP": {
-      "text": "ESFPs are vivacious entertainers who charm and engage those around them. They are spontaneous, energetic, and fun-loving, and take pleasure in the things around them: food, clothes, nature, animals, and especially people. ESFPs are typically warm and talkative and have a contagious enthusiasm for life. They like to be in the middle of the action and the center of attention. They have a playful, open sense of humor, and like to draw out other people and help them have a good time.",
+      "text": "ESFPs जिंदादिल मनोरंजन जो आकर्षण हैं और उन्हें आसपास के लोगों व्यस्त हैं। वे सहज, ऊर्जावान और मज़ेदार हैं, और उनके आस-पास की चीजों में आनंद लेते हैं: भोजन, कपड़े, प्रकृति, पशु, और विशेष रूप से लोग ESFPs आमतौर पर गर्म और बातूनी हैं और जीवन के लिए संक्रामक उत्साह है उन्हें कार्रवाई के मध्य में और ध्यान केन्द्रित करना पसंद है। उनके पास एक मजेदार, मजेदार हास्य है, और अन्य लोगों को आकर्षित करना और उन्हें अच्छा समय देने में मदद करना है।",
       "full": []
     },
     "ENFP": {
-      "text": "ENFPs are people-centered creators with a focus on possibilities and a contagious enthusiasm for new ideas, people and activities .ENFPs are typically agile and expressive communicators, using their wit, humor, and mastery of language to create engaging stories. Imaginative and original, ENFPs often have a strong artistic side. They are drawn to art because of its ability to express inventive ideas and a create a deeper understanding of human experience.",
+      "text": "ENFPs लोगों केंद्रित संभावनाओं पर ध्यान देने के और नए विचारों, लोगों और गतिविधियों .ENFPs के लिए एक संक्रामक उत्साह के साथ रचनाकारों आम तौर पर चुस्त और अर्थपूर्ण संचारकों हैं, उनकी बुद्धि, हास्य, और भाषा की महारत का उपयोग कर आकर्षक कहानियों बनाने के लिए कर रहे हैं। कल्पनाशील और मूल, एनएफपी अक्सर एक मजबूत कलात्मक पक्ष है वे आविष्कारशील विचारों को अभिव्यक्त करने और मानव अनुभवों की गहरी समझ बनाने की अपनी क्षमता की वजह से कला के लिए तैयार हैं।",
       "full": []
     },
     "ENTP": {
-      "text": "ENTPs enjoy playing with ideas and especially like to banter with others. They use their text wit and command of language to keep the upper hand with other people, often cheerfully poking fun at their habits and eccentricities. While the ENTP enjoys challenging others, in the end they are usually happy to live and let live. They are rarely judgmental, but they may have little patience for people who can't keep up.",
+      "text": "ENTPs विचारों के साथ खेल का आनंद लें और विशेष रूप से दूसरों के साथ मज़ाक करना पसंद है। वे अन्य लोगों के साथ ऊपरी हाथ रखने के लिए अपनी पाठ समझ और भाषा के आदेश का उपयोग करते हैं, अक्सर उनकी आदतों और विलक्षणताओं में मजाक उड़ाते हैं। ENTP दूसरों को चुनौती देने आनंद मिलता है, वहीं अंत में वे आम तौर पर जियो और जीने दो के लिए खुश हैं। वे शायद ही कभी निर्णय लेते हैं, लेकिन उन लोगों के लिए थोड़ा धैर्य हो सकता है जो नहीं रख सकते।",
       "full": []
     },
     "ESTJ": {
-      "text": "ESTJs are the consummate organizers, and want to bring structure to their surroundings. They value predictability and prefer things to proceed in a logical order. When they see a lack of organization, the ESTJ often takes the initiative to establish processes and guidelines, so that everyone knows what's expected.",
+      "text": "ESTJs परिपूर्ण आयोजकों हैं, और अपने परिवेश के लिए संरचना लाना चाहते हैं। वे अनुमानितता को महत्व देते हैं और तार्किक क्रम में आगे बढ़ने के लिए चीजें पसंद करते हैं। जब वे संगठन की कमी देखते हैं, ESTJ अक्सर पहल ताकि हर कोई जानता है क्या उम्मीद है, प्रक्रियाओं और दिशा निर्देशों की स्थापना करने के लिए ले जाता है।",
       "full": []
     },
     "ESFJ": {
-      "text": "ESFJs value loyalty and tradition, and usually make their family and friends their top priority. They are generous with their time, efort, and emotions. They often take on the concerns of others as if they were their own, and will attempt to put their signifcant organizational talents to use to bring order to other people's lives.",
+      "text": "ESFJ मूल्य वफादारी और परंपरा, और आमतौर पर अपने परिवार और दोस्तों को अपनी सर्वोच्च प्राथमिकता बनाते हैं वे अपने समय, ईफोर्ट और भावनाओं के साथ उदार हैं वे अक्सर दूसरों की चिंताओं को मानते हैं जैसे कि वे स्वयं होते हैं, और अन्य लोगों के जीवन में आदेश लाने के लिए उनका उपयोग करने योग्य संगठनात्मक प्रतिभा डालने का प्रयास करेंगे।",
       "full": []
     },
     "ENFJ": {
-      "text": "ENFJs are typically energetic and driven, and often have a lot on their plates. They are tuned into the needs of others and acutely aware of human suffering; however, they also tend to be optimistic and forward-thinking, intuitively seeing opportunity for improvement. The ENFJ is ambitious, but their ambition is not self-serving: rather, they feel personally responsible for making the world a better place.",
+      "text": "ENFJs आम तौर पर ऊर्जावान और प्रेरित कर रहे हैं और अक्सर उनके प्लेटों पर एक बहुत कुछ है। वे दूसरों की जरूरतों और मानवीय पीड़ा की तीव्रता से परिचित हैं; हालांकि, वे भी आशावादी और आगे-विचार करने वाले हैं, सुधार के लिए अवसरों को सहज रूप से देख रहे हैं। ENFJ महत्वाकांक्षी है, लेकिन उनकी महत्वाकांक्षा आत्म सेवारत नहीं है: बल्कि, वे दुनिया एक बेहतर जगह बनाने के लिए व्यक्तिगत रूप से जिम्मेदार महसूस करते हैं।",
       "full": []
     },
     "ENTJ": {
-      "text": "ISTJs are responsible organizers, driven to create and enforce order within systems and institutions. They are neat and orderly, inside and out, and tend to have a procedure for everything they do. Reliable and dutiful, ISTJs want to uphold tradition and follow regulations.",
+      "text": "ISTJs जिम्मेदार आयोजकों हैं, जो सिस्टम और संस्थानों के भीतर आदेश बनाने और लागू करने के लिए प्रेरित होते हैं। वे साफ और सुव्यवस्थित हैं, अंदर और बाहर, और जो भी वे करते हैं, उनके लिए एक प्रक्रिया होती है। विश्वसनीय और कर्तव्यशाली, ISTJ परंपरा को कायम रखने और नियमों का पालन करना चाहते हैं।",
       "full": []
     }
   },
   "static": {
-    "questions-title": "There are sixteen personality types and each of us leans toward one of the types. Each personality type has four letters."
+    "share-link": "इस लिंक को अपने दोस्तों के साथ साझा करें",
+    "click-here": "शुरू करने के लिए यहां क्लिक करें",
+    "friends-result-for-friend": "उसके दूसरे दोस्तों ने उसे कैसे देखा?",
+    "friends-result-for-me": "आपके मित्र आपको कैसे देखते हैं?",
+    "start-my-own": "अपने प्रश्नोत्तरी शुरू करें और जानें कि आपके मित्र आपके बारे में क्या सोचते हैं।",
+    "result": "यह देखने के लिए कि आपके मित्र आपके बारे में क्या सोचते हैं, अपने WhatsApp / Facebook से यह लिंक फिर से खोलें।",
+    "questions-title": "यहां सोलह व्यक्तित्व प्रकार हैं और हम में से प्रत्येक प्रकार की ओर झुकता है प्रत्येक व्यक्तित्व के प्रकार में चार अक्षर हैं."
   }
 }
